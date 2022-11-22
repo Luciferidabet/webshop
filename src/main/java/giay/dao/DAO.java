@@ -28,10 +28,7 @@ public class DAO {
     
         public List<Product> getAllProducts(){
         List<Product> list = new ArrayList<>();
-        String query = "select product.product_id, product.product_name, product.category_id, product.description, product.price, product.sale_price, product.enable, productimg.productimg_id, productimg.productimg_path, productimg.isPrimaryImg, product.detail_path\n" +
-                        "FROM product INNER JOIN productimg\n" +
-                        "ON product.product_id = productimg.product_id\n" +
-                        "WHERE productimg.isPrimaryImg = 1 and product.enable = 1";  
+        String query = "SELECT * FROM product";  
 
         try {
             conn = new DBContext().getConnection();
@@ -83,10 +80,7 @@ public class DAO {
 //        String query = "SELECT * FROM product\n" +
 //                "where category_id = ? and enable=?";
 
-        String query = "select product.product_id, product.product_name, product.category_id, product.description, product.price, product.sale_price, product.enable, productimg.productimg_id, productimg.productimg_path, productimg.isPrimaryImg, product.detail_path\n" +
-                        "FROM product INNER JOIN productimg\n" +
-                        "ON product.product_id = productimg.product_id\n" +
-                        "WHERE productimg.isPrimaryImg = 1 and product.enable = 1 and category_id = ?";
+        String query = "SELECT * FROM product";
         try {
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
@@ -117,10 +111,7 @@ public class DAO {
         List<Product> listP2 = new ArrayList<>();
 
 
-        String query = "select product.product_id, product.product_name, product.category_id, product.description, product.price, product.sale_price, product.enable, productimg.productimg_id, productimg.productimg_path, productimg.isPrimaryImg, product.detail_path\n" +
-                        "FROM product INNER JOIN productimg\n" +
-                        "ON product.product_id = productimg.product_id\n" +
-                        "WHERE productimg.isPrimaryImg = 1 and product.enable = 1 and category_id = ?";
+        String query = "SELECT * FROM product";
 
         try {
             conn = new DBContext().getConnection();
@@ -153,10 +144,7 @@ public class DAO {
 //        String query = "SELECT * FROM magicshop.product\n" +
 //                "where category_id = ? and enable= 1";
 
-        String query = "select product.product_id, product.product_name, product.category_id, product.description, product.price, product.sale_price, product.enable, productimg.productimg_id, productimg.productimg_path, productimg.isPrimaryImg, product.detail_path\n" +
-                        "FROM product INNER JOIN productimg\n" +
-                        "ON product.product_id = productimg.product_id\n" +
-                        "WHERE productimg.isPrimaryImg = 1 and product.enable = 1 and category_id = ?";
+        String query = "SELECT * FROM product";
 
         try {
             conn = new DBContext().getConnection();

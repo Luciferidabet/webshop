@@ -31,12 +31,12 @@ public class DBContext {
 //    private final String password = "6cb5e652"; 
      
      //    MySQL - Local Database
-    private final String hostName = "localhost";
-    private final String dbName = "qlwebgiay";
+    private final String hostName = "us-cdbr-east-06.cleardb.net";
+    private final String dbName = "heroku_943bb3c74ab5137";
 //    private final String portNumber = "3306";
     private final String instance="";//LEAVE THIS ONE EMPTY IF YOUR SQL IS A SINGLE INSTANCE
-    private final String userID = "root";
-    private final String password = "root";
+    private final String userID = "b111490a0d928e";
+    private final String password = "e5a50f94";
     
     public static void main(String[] args) {
          try {
